@@ -1,13 +1,13 @@
 class Solution {
     public int rob(int[] nums) {
-if (nums.length == 1) {
-return nums[0];
-}
-
-// If two houses, return max
-if (nums.length == 2) {
-return Math.max(nums[0], nums[1]);
-}
+// if (nums.length == 1) {
+// return nums[0];
+// }
+// if (nums.length == 2) {
+// return Math.max(nums[0], nums[1]);
+// }
+        if(nums.length<2)
+        return nums[0];
 
 
         int[] lastSkip=new int[nums.length-1];
